@@ -7,8 +7,8 @@ from nltk.chunk import conlltags2tree, tree2conlltags
 from nltk.corpus import stopwords
 import os
 import re
-
-fin = open('nlp.txt', 'r')
+filepath = 'enter the file path'
+fin = open('filepath', 'r')
 fout =  open('out.txt', 'w' )
 text = fin.read()
 text = re.sub(r'[^\w\s]',' ',text)        
