@@ -40,7 +40,7 @@ for x in sentence:
             if re.findall(r'Datetag' , chunk): 
                 chunk = re.sub('[B|I]-Datetag|CD|JJ', '',chunk)
                 fout.write(chunk)
-            if re.search(r'[B|I]-Qualificationtag' , chunk):
+            if re.search(r'Qualificationtag' , chunk):
                 chunk = re.sub('[B|I]-Qualificationtag|NNP|IN', '',chunk)
                 fout.write(chunk)
         fout.write('\n')
